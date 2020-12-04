@@ -1,4 +1,4 @@
-# Google Photos Takeout for Live Photo issues
+# Google Photos Takeout for Live Photo `(1)` issue fixer
 
 Google Photos sometimes breaks exports by making the {file}.HEVC/JPG + {file}.MOV files into {file}.HEVC/JPG + (1).HEVC/JPG (even though it _should_ be .MOV).
 
