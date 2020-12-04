@@ -1,6 +1,6 @@
 # Google Photos Takeout for Live Photo `(1)` issue fixer
 
-Google Photos sometimes breaks exports by making the {file}.HEVC/JPG + {file}.MOV files into {file}.HEVC/JPG + {file}(1).HEVC/JPG (even though it _should_ be .MOV).
+Google Photos sometimes breaks exports by making the `{file}.HEVC/JPG` + `{file}.MOV` files into `{file}.HEVC/JPG` + `{file}(1).HEVC/JPG` (even though it _should_ be `{file}.MOV`).
 
 This detects these descrepancies and renames file file to a MOV file, if it's actually a MOV file (and some other checks, like there's an accompanying HEVC/JPG photo).
 
