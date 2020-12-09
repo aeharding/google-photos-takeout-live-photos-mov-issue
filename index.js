@@ -16,7 +16,7 @@ const globMatchStr = `${BASE}/**/*(1).{HEIC,JPG}`
 
   const paths = await new Promise((resolve, reject) => {
     glob(globMatchStr, { noext: true }, (err, res) => {
-      if (err) return rejects(err)
+      if (err) return reject(err)
 
       resolve(res)
     })
